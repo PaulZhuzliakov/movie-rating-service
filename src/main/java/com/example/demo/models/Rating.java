@@ -2,11 +2,14 @@ package com.example.demo.models;
 
 public class Rating {
     private String movieId;
-    private String name;
+    private Integer rating;
 
-    public Rating(String movieId, String name) {
+    public Rating() {
+    }
+
+    public Rating(String movieId, Integer rating) {
         this.movieId = movieId;
-        this.name = name;
+        this.rating = rating;
     }
 
     public String getMovieId() {
@@ -17,11 +20,11 @@ public class Rating {
         this.movieId = movieId;
     }
 
-    public String getName() {
-        return name;
+    public Integer getRating() {
+        return rating;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setRating(Integer rating) {
+        this.rating = rating;
     }
 }
